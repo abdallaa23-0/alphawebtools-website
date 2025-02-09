@@ -1,97 +1,72 @@
 /* style.css - Styling for Tech Services Website */
 
-/* Contact Page Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #0073e6;
     color: white;
-    padding: 20px 0;
+    padding: 15px;
     text-align: center;
 }
 
-header nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #005bb5;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
+nav ul li {
+    margin: 0 15px;
 }
-
-header nav ul li a {
+nav ul li a{
     color: white;
     text-decoration: none;
+    padding: 10px;
+    display: block;
 }
 
-header nav ul li a.active {
-    font-weight: bold;
+nav ul li a:hover {
+    background-color: #003f7f;
+    border-radius: 5px;
 }
 
 main {
     padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
 }
 
-h1, h2 {
-    color: #333;
+section{
+    margin-bottom: 20px;
 }
 
-#contact-info {
-    margin-bottom: 40px;
-}
-
-.contact-details p {
-    font-size: 1.1em;
-}
-
-.contact-details a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-#contact-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#contact-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-#contact-form input, #contact-form textarea {
-    width: 100%;
+footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
     padding: 10px;
-    margin-bottom: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+input, textarea, button{
+    margin-bottom: 10px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-#contact-form button {
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact-form button:hover {
-    background-color: #005fa3;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
 
