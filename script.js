@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = document.getElementById('email').value;
         if (email) {
             // Send the form data using AJAX
-            fetch('https://example.com/subscribe', {
+            fetch('https://jsonplaceholder.typicode.com/posts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(response => response.json())
             .then(data => {
-                if (data.success) {
+                if (data) {
                     alert('Thank you for subscribing!');
                 } else {
                     alert('There was an error with your subscription. Please try again.');
@@ -43,4 +43,4 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please enter a valid email address.');
         }
     });
-});
+}); 
