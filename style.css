@@ -172,13 +172,13 @@ footer {
     padding: 50px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    max-width: 600px;
-    margin: 100px auto;
+    z-index: 1000; /* Ensure it is on top of other elements */
 }
 
 .maintenance-container.visible {
-    display: block; /* Show when visible class is added */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center;
+    align-items: center;
 }
 
 .maintenance-container h1 {
@@ -190,3 +190,4 @@ footer {
     font-size: 1.2em;
     color: #333;
 }
+
