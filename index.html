@@ -5,38 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Web Tools</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Dropdown Menu Styles */
-        nav ul li {
-            position: relative;
-        }
-
-        nav ul li .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: #fff;
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li:hover .dropdown-menu {
-            display: block;
-        }
-
-        nav ul li .dropdown-menu li {
-            padding: 10px;
-        }
-
-        nav ul li .dropdown-menu li a {
-            text-decoration: none;
-            color: black;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -47,14 +15,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#blog">Blog</a></li>
-                <li class="dropdown">
-                    <a href="#">Contact ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#contact">Contact Form</a></li>
-                        <li><a href="tel:+1234567890">Call Us</a></li>
-                        <li><a href="mailto:info@example.com">Email Us</a></li>
-                    </ul>
-                </li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -70,7 +31,7 @@
             <ul>
                 <li>Web Design</li>
                 <li>Web Development</li>
-                <li>Search Engine Optimization</li>
+                
                 <li>Content Marketing</li>
                 <li>Social Media Marketing</li>
             </ul>
@@ -86,13 +47,13 @@
             <!-- Form submission to Formspree endpoint -->
             <form action="https://formspree.io/f/xzzdggbr" method="POST">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="text" id="name" name="name" required>
                 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="email" id="email" name="email" required>
                 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                <textarea id="message" name="message" required></textarea>
                 
                 <button type="submit">Send</button>
             </form>
