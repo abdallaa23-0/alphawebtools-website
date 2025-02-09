@@ -19,8 +19,26 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         const email = document.getElementById('email').value;
         if (email) {
-            alert('Thank you for subscribing!');
-            this.submit();
+            // Send the form data using AJAX
+            fetch('https://example.com/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email: email })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Thank you for subscribing!');
+                } else {
+                    alert('There was an error with your subscription. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error with your subscription. Please try again.');
+            });
         } else {
             alert('Please enter a valid email address.');
         }
