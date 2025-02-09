@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Add smooth scrolling to all navigation links
-    document.querySelectorAll("nav ul li a").forEach(anchor => {
+    document.querySelectorAll("nav .dropdown-content a").forEach(anchor => {
         anchor.addEventListener('click', function(event) {
             event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
