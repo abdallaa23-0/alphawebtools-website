@@ -43,4 +43,19 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please enter a valid email address.');
         }
     });
-}); 
+
+    // Add scroll event listener to trigger animations
+    const hiddenElements = document.querySelectorAll('.hidden');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    hiddenElements.forEach(element => {
+        observer.observe(element);
+    });
+});
