@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const isMaintenanceMode = true; // Set this to true to enable maintenance mode
+    const isMaintenanceMode = false; // Set this to true to enable maintenance mode
 
     if (isMaintenanceMode) {
         document.getElementById('main-content').style.display = 'none';
         document.getElementById('maintenance-container').classList.remove('hidden');
         document.getElementById('maintenance-container').classList.add('visible');
-        return;
+    } else {
+        document.getElementById('maintenance-container').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
     }
 
     // Add smooth scrolling to all navigation links
