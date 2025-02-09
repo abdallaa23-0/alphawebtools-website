@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const isMaintenanceMode = false; // Set this to true to enable maintenance mode
+
+    if (isMaintenanceMode) {
+        document.getElementById('main-content').style.display = 'none';
+        document.getElementById('maintenance-container').classList.remove('hidden');
+        document.getElementById('maintenance-container').classList.add('visible');
+        return;
+    }
+
     // Add smooth scrolling to all navigation links
     document.querySelectorAll("nav .dropdown-content a").forEach(anchor => {
         anchor.addEventListener('click', function(event) {
@@ -58,4 +67,4 @@ document.addEventListener('DOMContentLoaded', function() {
     hiddenElements.forEach(element => {
         observer.observe(element);
     });
-});
+}); 
