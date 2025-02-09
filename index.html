@@ -8,66 +8,81 @@
 </head>
 <body>
     <header>
-        <h1 class="fade-in">Welcome to Alpha Web Tools</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="fade-in">Welcome to Alpha Web Tools</h1>
+            <nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
                     
     <main>
-        <section id="home" class="hidden">
-            <h2>Home</h2>
-            <p>Welcome to Alpha Web Tools. Here, we are a web development company that specializes in creating websites for small businesses. We are dedicated to helping you grow your business by creating a professional online presence that will attract new customers and increase your sales. Our team of experienced web developers will work with you to create a custom website that meets your specific needs and goals. Contact us today to get started!</p>
+        <section id="about" class="visible">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Welcome to Alpha Web Tools. We are a web development company that specializes in creating websites for small businesses. We are dedicated to helping you grow your business by creating a professional online presence that will attract new customers and increase your sales. Our team of experienced web developers will work with you to create a custom website that meets your specific needs and goals. Contact us today to get started!</p>
+            </div>
         </section>
 
         <section id="services" class="hidden">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Web Design</li>
-                <li>Web Development</li>
-                <li>Content Marketing</li>
-                <li>Social Media Marketing</li>
-            </ul>
+            <div class="container">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Web Development</li>
+                    <li>Content Marketing</li>
+                    <li>Social Media Marketing</li>
+                </ul>
+            </div>
         </section>
 
         <section id="blog" class="hidden">
-            <h2>Our Blog</h2>
-            <p>Stay updated with the latest tech trends and industry news.</p>
-            <form id="subscribe-form" method="post">
-                <label for="email">Subscribe to our monthly blog post:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Subscribe</button>
-            </form>
+            <div class="container">
+                <h2>Our Blog</h2>
+                <p>Stay updated with the latest tech trends and industry news.</p>
+                <form id="subscribe-form" method="post">
+                    <label for="email">Subscribe to our monthly blog post:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </section>
 
         <section id="contact" class="hidden">
-            <h2>Contact Us</h2>
-            <!-- Form submission to Formspree endpoint -->
-            <form action="https://formspree.io/f/xzzdggbr" method="POST" target="_blank">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
+            <div class="container">
+                <h2>Contact Us</h2>
+                <!-- Form submission to Formspree endpoint -->
+                <form action="https://formspree.io/f/xzzdggbr" method="POST" target="_blank">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2023 Alpha Web Tools. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2023 Alpha Web Tools. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
