@@ -15,18 +15,18 @@ body {
 }
 
 header {
-    background-color: #0073e6;
+    background-color: #003366; /* Dark blue color */
     color: #fff;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: relative;
 }
 
 .dropdown {
@@ -35,9 +35,9 @@ nav {
 }
 
 .dropbtn {
-    background-color: #0073e6;
+    background-color: #003366; /* Dark blue color */
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -65,6 +65,7 @@ nav {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 5px;
+    right: 0;
 }
 
 .dropdown-content a {
@@ -84,7 +85,7 @@ nav {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #005bb5;
+    background-color: #002244; /* Darker blue on hover */
 }
 
 main {
@@ -100,7 +101,7 @@ section {
 }
 
 h2 {
-    color: #0073e6;
+    color: #003366; /* Dark blue color */
     text-align: center;
 }
 
@@ -126,7 +127,7 @@ form input, form textarea, form button {
 }
 
 form button {
-    background-color: #0073e6;
+    background-color: #003366; /* Dark blue color */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -134,11 +135,11 @@ form button {
 }
 
 form button:hover {
-    background-color: #005bb5;
+    background-color: #002244; /* Darker blue on hover */
 }
 
 footer {
-    background-color: #0073e6;
+    background-color: #003366; /* Dark blue color */
     color: white;
     text-align: center;
     padding: 10px;
@@ -193,10 +194,10 @@ footer {
 
 .maintenance-container h1 {
     font-size: 2.5em;
-    color: #0073e6;
+    color: #003366; /* Dark blue color */
 }
 
 .maintenance-container p {
     font-size: 1.2em;
     color: #333;
-}
+}  
