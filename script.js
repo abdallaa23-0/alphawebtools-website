@@ -18,8 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
             if (targetElement) {
+                document.querySelectorAll('main section').forEach(section => {
+                    section.classList.add('hidden');
+                    section.classList.remove('visible');
+                });
+                targetElement.classList.add('visible');
+                targetElement.classList.remove('hidden');
                 window.scrollTo({
-                    top: targetElement.offsetTop,
+                    top: 0,
                     behavior: 'smooth'
                 });
             }
