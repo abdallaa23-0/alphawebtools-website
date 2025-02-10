@@ -42,6 +42,19 @@ nav {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+}
+
+.dropbtn .bar1, .dropbtn .bar2, .dropbtn .bar3 {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
 }
 
 .dropdown-content {
