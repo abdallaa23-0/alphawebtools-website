@@ -76,4 +76,4 @@ document.addEventListener('DOMContentLoaded', function() {
     hiddenElements.forEach(element => {
         observer.observe(element);
     });
-});
+}); 
