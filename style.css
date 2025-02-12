@@ -88,6 +88,21 @@ nav {
     background-color: #002244; /* Darker blue on hover */
 }
 
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+social-icon:hover {
+    color: #ffcc00; /* Yellow color on hover */
+}
+
 main {
     padding: 20px 0;
 }
