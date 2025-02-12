@@ -32,7 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add form submission handling for the subscription form
+    // Temporarily disable form submission handling for the subscription form
+    /*
     document.getElementById('subscribe-form').addEventListener('submit', function(event) {
         event.preventDefault();
         const email = document.getElementById('email').value;
@@ -67,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(String(email).toLowerCase());
     }
+    */
 
     // Add scroll event listener to trigger animations
     const hiddenElements = document.querySelectorAll('.hidden');
