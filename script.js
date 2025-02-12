@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('subscribe-form').addEventListener('submit', function(event) {
         event.preventDefault();
         const email = document.getElementById('email').value;
-        if (email) {
+        if (validateEmail(email)) {
             // Send the form data using AJAX
             fetch('https://jsonplaceholder.typicode.com/posts', {
                 method: 'POST',
@@ -62,6 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Email validation function
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    }
+
     // Add scroll event listener to trigger animations
     const hiddenElements = document.querySelectorAll('.hidden');
     const observer = new IntersectionObserver((entries) => {
@@ -76,4 +82,4 @@ document.addEventListener('DOMContentLoaded', function() {
     hiddenElements.forEach(element => {
         observer.observe(element);
     });
-});
+}); 
